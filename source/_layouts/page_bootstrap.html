@@ -2,7 +2,7 @@
 layout: default_bootstrap
 ---
 
-<div>
+<div {% if page.sidebar == false %} class="span12" {% else %} class="span8" {% endif %}>
 <article role="article">
   {% if page.title %}
   <header>
@@ -32,6 +32,7 @@ layout: default_bootstrap
 {% endif %}
 </div>
 {% unless page.sidebar == false %}
+<div class="span4">
 <aside class="sidebar">
   {% if site.page_asides.size %}
     {% include_array page_asides %}
@@ -39,4 +40,5 @@ layout: default_bootstrap
     {% include_array default_asides %}
   {% endif %}
 </aside>
+</div>
 {% endunless %}
