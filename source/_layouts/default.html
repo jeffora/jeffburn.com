@@ -1,27 +1,21 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-{% include head_bootstrap.html %}
+{% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
   <div class="container">
     <div class="page-header">
-      <header role="banner">{% include header_bootstrap.html %}</header>
+      <header role="banner">{% include header.html %}</header>
     </div>
 
     <div class="navbar">
       <nav role="navigation">
         <div class="navbar-inner">
-          <div class="container">{% include navigation_bootstrap.html %}</div>
+          <div class="container">{% include navigation.html %}</div>
         </div>
       </nav>
     </div>
 
     <div class="row">
         {{ content | expand_urls: root_url }}
-    </div>
-
-    <div id="main">
-      <div id="content">
-        
-      </div>
     </div>
     <footer role="contentinfo">{% include footer.html %}</footer>
     {% include after_footer.html %}

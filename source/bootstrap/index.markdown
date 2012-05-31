@@ -1,5 +1,5 @@
 ---
-layout: page_bootstrap
+layout: page
 title: "bootstrap"
 date: 2012-05-28 18:19
 comments: true

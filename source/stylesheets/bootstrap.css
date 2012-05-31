@@ -4852,11 +4852,10 @@ footer.footer {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.why-is-everyone-yelling {
-  text-transform: uppercase;
+.article h1, .article h2 {
+  text-shadow: none;
 }
 
-.why-is-everyone-yelling-quietly {
-  text-transform: lowercase;
-  font-variant: small-caps;
+.resume-section-head {
+  cursor: pointer;
 }
