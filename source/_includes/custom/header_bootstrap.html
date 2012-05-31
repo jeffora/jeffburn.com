@@ -1,6 +1,6 @@
 <hgroup>
-  <p class="lead"><a href="{{ root_url }}/">{{ site.title }}</a></p>
+  <p class="lead"><em>{{ site.title }}</em></p>
   {% if site.subtitle %}
-    <h1>{{ site.subtitle }}</h1>
+    <h1>{{ site.subtitle | upcase }}</h1>
   {% endif %}
 </hgroup>
