@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Writing"
+title: "Fiction"
 comments: false
 sharing: false
 footer: false
