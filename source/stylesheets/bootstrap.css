@@ -4836,6 +4836,10 @@ footer.footer {
   visibility: hidden;
 }
 
+/*
+ * Custom modifications
+ */
+
 .article {
   min-height: 20px;
   padding: 19px;
@@ -4858,4 +4862,16 @@ footer.footer {
 
 .resume-section-head {
   cursor: pointer;
+}
+
+.twitter[class^="icon-"], .twitter[class*=" icon-"] {
+  color: #33ccff;
+}
+
+.stackoverflow[class^="icon-"], .stackoverflow[class*=" icon-"] {
+  color: #ff6600;
+}
+
+.linkedin[class^="icon-"], .linkedin[class*=" icon-"] {
+  color: #006699;
 }
